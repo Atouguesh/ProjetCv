@@ -1,0 +1,253 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pappins', sans-serif;
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color:#fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+}
+.container .left_Side
+{
+   position: relative;
+   background-color:rgb(67, 110, 201);
+   padding: 40px; 
+}
+.left_Side .imgBx
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title
+{
+  /* border-bottom: 2px solid rgb(255, 255, 255); */
+  color: rgb(255, 255, 255); 
+  font-size: 1.5em; 
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+  margin-bottom: 10px;
+ 
+}
+.contactInfo ul
+{
+    position: relative;
+}
+.contactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li span
+{
+    color: #fff;
+    font-size: 15px;
+}
+.reseauInfo ul
+{
+    position: relative;
+}
+.reseauInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.reseauInfo ul li span
+{
+    color: #fff;
+    font-size: 15px;
+}
+.loisirs ul
+{
+    position: relative;
+}
+.loisirs ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.loisirs ul li span
+{
+    color: #fff;
+    font-size: 15px;
+}
+.langue ul
+{
+    position: relative;
+}
+.langue ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.langue ul li span
+{
+    color: #fff;
+    font-size: 15px;
+}
+.langue .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color:black;
+    display: block;
+    margin-top: 5px;
+    border-radius: 50px;
+}
+.langue .percent div
+{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%; 
+  background-color:#fff; 
+  border-radius: 50px;
+}
+hr
+{
+    margin-top: 20%;
+}
+
+.container .right_Side
+{
+   position: relative;
+   background-color:rgb(243, 241, 248);
+   padding-top: 40px; 
+}
+.about
+{
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+.about:last-child
+{
+    margin-bottom: 10px;
+}
+.title2
+{
+    color: rgb(67, 110, 201);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.infor
+{
+    color: rgb(67, 110, 201);
+    text-align: center;
+
+}
+.about ul li
+{
+    margin-bottom: 15px;
+    list-style: none;
+}
+.about h5
+{
+    color: rgb(67, 110, 201);
+    font-size: 20px;
+}
+.about .box
+{
+   display: flex;
+   flex-direction: row; 
+   margin: 20px 0;
+}
+.about .box .year_company
+{
+  min-width: 150px;  
+}
+.about .box .year_company h5
+{
+    text-transform: uppercase;
+    color:rgb(2, 6, 15);
+    font-size: 10px;
+    margin-left: 5px;
+
+}
+.about .box .text h4
+{
+    text-transform: uppercase;
+    color: rgb(1, 1, 12);
+    font-size: 16px;
+}
+.skills .box
+{
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items:center;
+}
+.skills .box h4
+{
+    text-transform: uppercase;
+    color: rgb(67, 110, 201);
+    font-weight: 500;
+}
+.skills .box .percent
+{
+    position: relative;
+    width: 90%;
+    height: 8px;
+    background:rgb(8, 15, 15);
+    border-radius: 50px;
+
+
+}
+.skills .box .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(67, 110, 201);
+    border-radius: 50px;
+
+}
+@media (max-width:1000px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width:600px)
+{
+   .about .box
+   {
+    flex-direction: colum;
+   }
+   .about .box .year_company
+   {
+    margin-bottom: 5px;
+   }
+}
+.skills .box
+{
+    grid-template-columns: repeat(1,1fr);
+}
