@@ -1,3 +1,4 @@
+/* Réinitialisation des styles de base */
 *
 {
     margin: 0;
@@ -5,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Pappins', sans-serif;
 }
-
+/* Styles pour le conteneur principal */
 .container
 {
     position: relative;
@@ -18,18 +19,22 @@
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
 }
+
+/* Styles pour la partie gauche du conteneur */
 .container .left_Side
 {
    position: relative;
    background-color:rgb(67, 110, 201);
    padding: 40px; 
 }
+/* Styles pour les images de la partie gauche */
 .left_Side .imgBx
 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/* Styles pour le titre */
 .title
 {
   /* border-bottom: 2px solid rgb(255, 255, 255); */
@@ -42,6 +47,7 @@
   margin-bottom: 10px;
  
 }
+/* Styles pour les informations de contact */
 .contactInfo ul
 {
     position: relative;
@@ -63,11 +69,13 @@
     color: #fff;
     font-size: 15px;
 }
+/* Styles pour les icônes */
 .icon img
 {
     width: 20px;
     margin-bottom: -4px;
 }
+/* Styles pour les informations de réseau */
 .reseauInfo ul
 {
     position: relative;
@@ -87,6 +95,8 @@
     color: #fff;
     font-size: 15px;
 }
+
+/* Styles pour les loisirs */
 .loisirs ul
 {
     position: relative;
@@ -114,6 +124,8 @@
     color: #fff;
     font-size: 15px;
 }
+
+/* Styles pour les langues */
 .langue ul
 {
     position: relative;
@@ -130,6 +142,7 @@
     color: #fff;
     font-size: 15px;
 }
+/* Styles pour la barre de progression des langues */
 .langue .percent
 {
     position: relative;
@@ -149,17 +162,19 @@
   background-color:#fff; 
   border-radius: 50px;
 }
+/* Styles pour la ligne horizontale */
 hr
 {
     margin-top: 20%;
 }
-
+/* Styles pour la partie droite du conteneur */
 .container .right_Side
 {
    position: relative;
    background-color:rgb(243, 241, 248);
    padding-top: 40px; 
 }
+/* Styles pour les informations à propos */
 .about
 {
     margin-bottom: 50px;
@@ -169,6 +184,8 @@ hr
 {
     margin-bottom: 10px;
 }
+
+/* Styles pour les titres à propos */
 .title2
 {
     color: rgb(67, 110, 201);
@@ -177,23 +194,28 @@ hr
     text-align: start;
     margin-bottom: 15px;
 }
+/* Styles pour les informations */
 .infor
 {
     color: rgb(67, 110, 201);
     text-align: start;
+    
 
 }
+/* Styles pour les listes à propos */
 .about ul li
 {
     margin-bottom: 15px;
     list-style: none;
 }
+/* Styles pour les titres des listes à propos */
 .about h5
 {
     color: rgb(67, 110, 201);
     font-size: 25px;
     
 }
+/* Styles pour les boîtes à propos */
 .about .box
 {
    display: flex;
@@ -219,6 +241,7 @@ hr
     color: rgb(1, 1, 12);
     font-size: 16px;
 }
+/* Styles pour les compétences */
 .skills .box
 {
   position: relative;
@@ -254,6 +277,7 @@ hr
     border-radius: 50px;
 
 }
+/* Media queries pour les tailles d'écran */
 @media (max-width:1000px)
 {
     .container
@@ -273,6 +297,7 @@ hr
     margin-bottom: 5px;
    }
 }
+
 .skills .box
 {
     grid-template-columns: repeat(1,1fr);
