@@ -50,13 +50,23 @@
 {
     position: relative;
     list-style: none;
-    margin: 10px 0;
+    margin: 15px 0;
     cursor: pointer;
 }
+
+.contactInfo ul li .text{
+    margin-left: 20px;
+}
+
 .contactInfo ul li span
 {
     color: #fff;
     font-size: 15px;
+}
+.icon img
+{
+    width: 20px;
+    margin-bottom: -4px;
 }
 .reseauInfo ul
 {
@@ -69,6 +79,9 @@
     margin: 10px 0;
     cursor: pointer;
 }
+.reseauInfo ul li .text{
+    margin-left: 20px;
+}
 .reseauInfo ul li span
 {
     color: #fff;
@@ -77,6 +90,17 @@
 .loisirs ul
 {
     position: relative;
+}
+ /* Ajouter un élément avec un contenu vide et une largeur et hauteur nulles directement avant les "li" */
+ .loisirs li::before {
+    content: "";
+    width: 10px; /* Largeur des carrés */
+    height: 10px; /* Hauteur des carrés */
+    background-color: rgb(250, 247, 247); /* Couleur des carrés */
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    border-radius: 2px; /* Pour arrondir légèrement les coins (facultatif) */
 }
 .loisirs ul li
 {
@@ -150,13 +174,13 @@ hr
     color: rgb(67, 110, 201);
     text-transform: capitalize;
     letter-spacing: 1px;
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: start;
+    margin-bottom: 15px;
 }
 .infor
 {
     color: rgb(67, 110, 201);
-    text-align: center;
+    text-align: start;
 
 }
 .about ul li
@@ -167,7 +191,8 @@ hr
 .about h5
 {
     color: rgb(67, 110, 201);
-    font-size: 20px;
+    font-size: 25px;
+    
 }
 .about .box
 {
@@ -182,9 +207,10 @@ hr
 .about .box .year_company h5
 {
     text-transform: uppercase;
-    color:rgb(2, 6, 15);
-    font-size: 10px;
-    margin-left: 5px;
+    color:rgb(67, 110, 201);
+    font-size: 15px;
+    margin-left: 0;
+    
 
 }
 .about .box .text h4
